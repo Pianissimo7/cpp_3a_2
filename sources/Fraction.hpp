@@ -25,6 +25,7 @@ namespace ariel {
 
             // Comparison operators
             bool operator==(const Fraction& other) const;
+            bool operator!=(const Fraction& other) const;
             bool operator<=(const Fraction& other) const;
             bool operator>=(const Fraction& other) const;
             bool operator<(const Fraction& other) const;
@@ -62,4 +63,10 @@ namespace ariel {
     double operator*(double d, const Fraction& frac);
     double operator/(double d, const Fraction& frac);
 
+    bool operator==(double d, const Fraction& frac);
+    bool operator!=(double d, const Fraction& frac);
+    bool operator<(double d, const Fraction& frac);
+    bool operator<=(double d, const Fraction& frac);
+    bool operator>(double d, const Fraction& frac);
+    bool operator>=(double d, const Fraction& frac);
 }

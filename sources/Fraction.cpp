@@ -48,6 +48,9 @@ Fraction Fraction::operator/(double d) const {
 bool Fraction::operator==(const Fraction& other) const {
     return false;
 }
+bool Fraction::operator!=(const Fraction& other) const {
+    return false;
+}
 bool Fraction::operator<=(const Fraction& other) const {
     return false;
 }
@@ -101,6 +104,26 @@ double ariel::operator*(double d, const Fraction& other) {
 }
 double ariel::operator/(double d, const Fraction& other) {
     return d;
+}
+
+// double & fraction comparison operators
+bool ariel::operator==(double d, const Fraction& frac) {
+    return false;
+}
+bool ariel::operator!=(double d, const Fraction& frac) {
+    return false;
+}
+bool ariel::operator<(double d, const Fraction& frac) {
+    return false;
+}
+bool ariel::operator<=(double d, const Fraction& frac) {
+    return false;
+}
+bool ariel::operator>(double d, const Fraction& frac) {
+    return false;
+}
+bool ariel::operator>=(double d, const Fraction& frac) {
+    return false;
 }
 
 // Increment/decrement operators
